@@ -7,7 +7,6 @@
  * @HomePage        : https://github.com/dmscode/Obsidian-Templates
  */
 function get_date () {
-  const today = new Date()
   const num = ['日', '一', '二', '三', '四', '五', '六', '七', '八', '九']
   return (
     today.toLocaleDateString('zh-CN')
@@ -27,4 +26,5 @@ function get_date () {
     '星期'+num[today.getDay()]
   )
 }
+
 module.exports = get_date;
